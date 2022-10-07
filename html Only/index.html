@@ -1,0 +1,736 @@
+<!-- ------------ -->
+<!-- ------------ -->
+<!-- INTRODUCTION -->
+<!-- ------------ -->
+<!-- ------------ -->
+
+<!-- To start a basic html you use ! and then enter -->
+<!DOCTYPE html>
+
+<!-- everything inside the html filebox goes in the HTML tag -->
+
+<html lang="en">
+
+
+<!-- everything inside the HEAD tag is the information about the website -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- To rename the title of the webiste use TITLE tag -->
+    <title>Document</title>
+</head>
+
+<!-- everything inside the BODY tag is the shown on the website -->
+<body>
+
+    <!-- ------------ -->
+    <!-- ------------ -->
+    <!-- TEXT IN HTML -->
+    <!-- ------------ -->
+    <!-- ------------ -->
+
+    <!-- Headings are to display Headlines, use h1 to h6 tags varying in size -->
+    <h1>Heading size 1</h1>
+    <h2>Heading size 2</h2>
+    <h3>Heading size 3</h3>
+    <h4>Heading size 1</h4>
+    <h5>Heading size 1</h5>
+    <h6>Heading size 1</h6>
+
+
+    <!-- To create a paragraph use P tag -->
+    <p>This is a simple paragraph</p>
+    <p>This is a simple paragraph too</p>
+    <p>This is a simple paragraph three</p>
+
+    <!-- To make the text bold use B tag -->
+    <p>
+        <b>THIS TEXT IS BOLD</b>
+    </p>
+
+
+    <!-- To make the text italic use I tag -->
+    <p>
+        <i>THIS TEXT IS ITALIC</i>
+    </p>
+
+
+    <!-- Use SUP tag superscript higher  -->
+    <p>
+        E=MC<sup>2</sup> IS A <b>SUPERSCRIPT</b>
+    </p>
+
+
+    <!-- Use SUB tag subscript lower  -->
+    <p>
+        H<sub>2</sub>O IS A <b> SUBSCRIPT</b>
+    </p>
+
+
+    <!-- Use <br /> to break the lines -->
+    <p>
+        this line will break <br /> somewhere
+    </p>
+
+
+    <!-- Use <hr /> to create HORIZONTAL RULES -->
+    <p>THIS IS THE UPPER SIDE OF THE HORIZONTAL RULE</p>
+
+    <hr>
+
+    <p>THIS IS THE LOWER SIDE OF THE HORIZONTAL RULE</p>
+
+    <p>.</p>
+
+    <!-- SEMANTICALLY CORRECT CODE -->
+
+    <!-- use STRONG tag to show contents strong importance, its like bold but since the meaning is strong use this -->
+    <p>
+        <strong>This one is strong</strong> ___ <b>This one is bold</b>
+    </p>
+
+    <!-- use EM tag to show the emphasis that subtly changes the meaning of a sentence, displays text in italic -->
+    <p>
+        <em>This one is emphasised</em> ___ <i>This one is italic</i> 
+    </p>
+
+    <!-- The BLOCKQUOTE tag is used for longer quotes that take up an entire paragraph -->
+    <p>
+        <blockquote cite = "google.com"> This is a blockquote</blockquote>
+    </p>
+
+    <!-- the Q tag is used for quotes and gives them the apostrophes -->
+    <p>
+        Next sentence will be in quotes.<q>This sentence is in quotes</q>
+    </p>
+
+    <!-- use ABBR tag with title to abbreviate the definition -->
+    <p>
+        <abbr title="Best abbreviation ever">BAE</abbr>
+    </p>
+
+    <!-- use CITE to citate a piece of work -->
+    <p>
+        <cite>Me, Grandma, Iliko and Ilarion</cite> is Nodar Dumbadzes great novel
+    </p>
+
+    <!-- use DFN tag the first time you explain a new terminology to DEFINE a concept -->
+    <p>
+        <dfn>a mouse</dfn> is a hardware piece used for moving around the screen
+    </p>
+
+    <!-- use ADDRESS tag to highlight contact information, converts to italic -->
+    <address>
+        <p>
+            <a href="mailto:akaki@gmail.com">Send the email to akaki</a>
+        </p>
+        <p>
+            akaki lives on spring street
+        </p>
+    </address>
+
+
+    <!-- use INS tag to show an inserted document, which underlines the text -->
+    <p>this document is <ins>inserted</ins></p>
+
+    <!-- use DEL tag to show a deleted document, which draws a line through the text -->
+    <p>this document is <del>deleted</del></p>
+
+    <!-- use S tag to show a document that is no longer accurate or relevant but shouldn't be deleted -->
+    <p><s>this shouldn't be deleted</s></p>
+ 
+    <!-- ------------- -->
+    <!-- ------------  -->
+    <!-- LISTS IN HTML -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+
+
+    <!-- ORDERED LISTS, UNORDERED LISTS, DEFINITION LISTS -->
+
+    <!-- ORDERED LISTS: use OL tag to create an itemed list, each item must be placed within LI tag to give them order -->
+    <p>
+        <ol>
+            <li>This is the first list element in ordered lists</li>
+            <li>This is the second list element in ordered lists</li>
+            <li>This is the third list element in ordered lists</li>
+        </ol>
+    </p>
+
+    <!-- UNORDERED LISTS: use UL tag to create an bullet list, each item must be placed within LI tag to give them order -->
+
+    <p>
+        <ul>
+            <li>This is the first item in an unordered list</li>
+            <li>This is the second item in an unordered list</li>
+            <li>This is the third item in an unordered list</li>
+        </ul>
+    </p>
+
+    <!-- DEFINITION LISTS: use DL tag to create, use DT tag to indicate the definiton term, use DD tag to define the term -->
+    <p>
+        <dl>
+            <dt>first word</dt>
+            <dd>first word definition</dd>
+            
+            <dt>second word</dt>
+            <dd>second word definition</dd>
+            
+            <dt>third word</dt>
+            <dd>third word definition</dd>
+            
+        </dl>
+    </p>
+
+    <!--  Nested lists can be created -->
+    <p>
+        <ul>
+            <li>first item </li>
+                <ul>
+                    <li>first subitem</li>
+                </ul>
+        </ul>
+    </p>
+
+    <!-- ------------- -->
+    <!-- ------------- -->
+    <!-- LINKS IN HTML -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+
+    <!-- LINKS ARE 5 TYPES 
+        ● Links from one website to another
+        ● Links from one page to another on the same website
+        ● Links from one part of a web page to another part of the same page
+        ● Links that open in a new browser window
+        ● Links that start up your email program and address a new email to someone -->
+
+    <!-- use A tag to create a clickable object -->
+    <p>
+        <a href="https://www.google.com">Google LINK</a>
+    </p>
+
+    <p>
+        <a href="test.html">Test Link</a>
+    </p>
+
+    <!-- Same folder <a href="reviews.html">Reviews</a> -->
+    <!-- Child folder <a href="music/listings.html">Listings</a> -->
+    <!-- Grandchild folder <a href="movies/dvd/reviews.html">Reviews</a> -->
+    <!-- Parent folder <a href="../index.html">Home</a> -->
+    <!-- Grandparent Folder <a href"../../index.html">Home</a> -->
+
+    <!-- use href="mailto:EMAIL" to start the users email program and send an email to the EMAIL -->
+    <p>
+        <a href="mailto:akaki@gmail.com">Mail me</a>
+    </p>
+
+    <!-- use <a href="LINK" target="_blank"> to create a new link of the LINK -->
+
+    <p>
+        <a href="https://www.google.com" target="_blank">Google Link</a> (This will open in a new tab)
+    </p>
+
+    <!-- To go to the same page but different section, first give the element an id and then reference if with href="#NAME" -->
+    <h1 id="Heading1">Heading1</h1>
+    <h2 id="Heading2">Heading2</h2>
+    <h3 id="Heading3">Heading3</h3>
+    <h4 id="Heading4">Heading4</h4>
+    <p id="Blankspace"><b>blankspace</b> </p>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    
+
+    <p>
+        <a href="#Heading1">Head to Heading1</a>
+    </p>
+    <p>
+        <a href="#Heading2">Head to Heading2</a>
+    </p>
+    <p>
+        <a href="#Heading3">Head to Heading3</a>
+    </p>
+    <p>
+        <a href="#Heading4">Head to Heading4</a>
+    </p>
+
+    <p>
+        <a href="#Blankspace">Head to blankspace</a>
+    </p>
+
+    <!-- -------------- -->
+    <!-- -------------- -->
+    <!-- IMAGES IN HTML -->
+    <!-- -------------- -->
+    <!-- -------------- -->
+    
+    <!-- To display an image we use IMG tag, SRC attribute is the source link of the image, ALT attribute is the
+    text displayed if the picture doesn't load, title attribute shows when you hover over the image, width is for
+    picture width, height is for picture height, if only one of them is specified the picture scales 1:1-->
+    
+    <img 
+    src="Images/Shkipper.png" 
+    alt="a penguin picture" 
+    title="a pixelated penguin with a transparent background"
+    width="300"
+    height="250">
+
+
+    <!-- To write a text under a picture accordingly use FIGURE tag, instert the IMG tag and FIGCAPTION tag to describe it -->
+    <figure>
+        <img src="Images/Shkipper.png" alt="a Penguin">
+        <br />
+        <figcaption>a penguin on a transparent background or something like that</figcaption>
+    </figure>
+
+    
+    <!-- -------------- -->
+    <!-- -------------- -->
+    <!-- TABLES IN HTML -->
+    <!-- -------------- -->
+    <!-- -------------- -->
+
+    <!-- To create a table use TABLE tag, for each row use TR tag, for each table data use TD tag -->
+    <table>
+        <tr>
+            <td>100</td>
+            <td>1500</td>
+            <td>20000</td>
+        </tr>
+        <tr>
+            <td>50</td>
+            <td>205</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>300</td>
+            <td>2500</td>
+        </tr>
+
+    </table>
+    <br>
+
+    <!-- To create a heading we use TH tag 'table heading' -->
+    <table>
+        <tr>
+            <th></th>
+            <th scope="col">Monday</th>
+            <th scope="col">Tuesday</th>
+        </tr>
+        <tr>
+            <th scope="row">Sold</th>
+            <td>50</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <th scope="row">Bought</th>
+            <td>250</td>
+            <td>300</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- To strech a table or span it use COLSPAN or ROWSPAN inside the TH or TD tag -->
+    <table>
+        <tr>
+            <th></th>
+            <th colspan="3">Holiday</th>
+        </tr>
+        <tr>
+            <th>Sold</th>
+            <td rowspan="2">150</td>
+            <td>200</td>
+            <td>1555</td>
+        </tr>
+        <tr>
+            <th>Bought</th>
+            <td colspan="2">15000</td>
+
+        </tr>
+    </table>
+    <br>
+
+    <!-- For big tables, use THEAD tag to put the Headlines in, TBODY to put the table body in and TFOOT for footer info -->
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Sold</th>
+                <td>50</td>
+                <td>100</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <th>Bought</th>
+                <td>100</td>
+                <td>300</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <th>Given Away</th>
+                <td>100</td>
+                <td>300</td>
+                <td>500</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            
+            <tr>
+                <th>Total</th>
+                <td>250</td>
+                <td>700</td>
+                <td>1200</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- ------------- -->
+    <!-- ------------- -->
+    <!-- FORMS IN HTML -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+
+
+    <!-- There are multiple types of interactable forms in html:  -->
+    <!-- TEXT INPUT -->
+    <!-- PASSWORD INPUT -->
+    <!-- TEXT AREA -->
+    <!-- RADIO BUTTONS -->
+    <!-- CHECKBOXES -->
+    <!-- DROP DOWN BOXES -->
+    <!-- SUBMIT BUTTONS -->
+    <!-- IMAGE BUTTONS -->
+    <!-- FILE UPLOAD -->
+
+
+    <!-- To use TEXT INPUT, in the input type put "text", name is the variable name, maxlength is the maxsize of username -->
+
+    <form action="test.html">
+
+        <p>
+            Username: 
+            <input type="text" name="username" id="user"  maxlength="15">
+        </p>
+    </form>
+
+    <!-- To use PASSWORD INPUT, in the input type put "password", name is the variable, maxlength is the maxsize of password -->
+
+    <form action="test.html">
+        <p>
+            Password:
+            <input type="password" name="password" id="pass" maxlength="10">
+        </p>
+    </form>
+
+    <!-- To use TEXT AREA, use TEXTAREA tag, name is the variable, id is unique, cols (columns), rows (rows), maxlength  -->
+    <form action="test.html">
+        <p>
+            Give us ur comments:
+        </p>
+            <textarea name="comments" id="comms" cols="30" rows="5" maxlength="100"></textarea>
+        
+    </form>
+
+    <!-- To use RADIO BUTTON, in the input type "radio", name is the variable, value is sent to the server, checked means
+    what is checked when the website starts -->
+    <form action="test.html">
+        <p>
+            select your favorite number
+            <br>
+            <input type="radio" name="favnumber" value="one" checked="checked">one
+            <input type="radio" name="favnumber" value="two">two
+            <input type="radio" name="favnumber" value="three">three
+            
+        </p>
+    </form>
+
+    <!-- To use a CHECKBOX, in the input type "checkbox", name is the variable, value is sent to the server, checked means
+    what is checked when the website starts -->
+
+    <form action="test.html">
+        <p>
+            Select your favorite color
+            <br>
+            <input type="checkbox" name="favcolor" value="green"> Green
+            <input type="checkbox" name="favcolor" value="orange"> Orange
+            <input type="checkbox" name="favcolor" value="blue"> Blue
+        </p>
+    </form>
+
+    <!-- To use a DROP DOWN BOX, create a SELECT tag, name is the variable, id is unique, then create an OPTION tag, 
+    value is a variable -->
+    <form action="test.html">
+        <p>
+            what can you hear
+            <br>
+            <select name="sounds" id="snds">
+                <option value="nothing">Nothing</option>
+                <option value="something">Something</option>
+                <option value="someone">Someone</option>
+            </select>
+        </p>
+    </form>
+
+    <!-- To use a FILE INPUT BOX, create an input with type "file", then create an input with a submit -->
+    <form action="test.html">
+        <p>Upload here</p>
+        <input type="file" name="song">
+        <br>
+        <input type="submit" value="Upload">
+    </form>
+
+    <!-- To use a SUBMIT BUTTON. create an input with type submit, name is the variable, value is 
+    displayed on the button -->
+    <form action="test.html">
+        <p>Subscribe to our email</p>
+        <input type="text" name="email">
+        <input type="submit" name="sub" value="SUBSICIRBE">
+
+    </form>
+
+    <!-- To use an IMAGE BUTTON, create an input with type "image", src is the file location, width height -->
+    <form action="test.html">
+        <p>Subscribe to our email</p>
+        <input type="text" name="email">
+        <input type="image" src="Images/HelpButton.png" name="sub" width="50">
+
+    </form>
+
+    <!-- To use a BUTTON, use button tag -->
+    <form action="test.html">
+        <button><img src="Images/HelpButton.png" alt="add" width="20 " height="20" /> Adds</button>
+        <input type="hidden" name="bookmark" value="lyrics" />
+    </form>
+    
+    <!-- To group Form elements use FIELDSET tag, legend is for the headline -->
+    <fieldset>
+        <legend>CONTACT</legend>
+        <label> Email: <br><input type="text"></label> <br>
+        <label> Phone: <br> <input type="text"></label> <br>
+        <label> Mobile: <br> <input type="text"></label> <br>
+    </fieldset>
+
+    <!-- Form Validation, is a form that is required by the developer to be filled, in the input, required -->
+    <form action="test.html">
+        <label for="username">Username</label>
+        <input type="text" required="required"><br>
+        <label for="password">Password</label>
+        <input type="text" required="required">
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- To use Date input, in the input type "date" -->
+    <form action="test.html">
+        <label for="Date">Departure Date</label>
+        <input type="date" name="depart" required="required">
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Form validation for EMAIL, is type  "email" -->
+    <form action="test.html">
+        <p>Please input the email</p>
+        <input type="email" name="email" required="required">
+        <input type="submit" >
+    </form>
+
+    <!-- Form validation for URL, is type  "url" -->
+    <form action="test.html">
+        <p>Please input the Website</p>
+        <input type="url" name="web" required="required">
+        <input type="submit" value="Submit url">
+    </form>
+
+    <!-- Form validation for SEARCH, is type  "search", there is also a placeholder, for null input -->
+    <form action="test.html">
+        <p>Search:</p>
+        <input type="search" placeholder="ipove rasac edzeb">
+        <input type="submit" value="Search">
+    </form>
+
+
+
+    <!-- ------------- -->
+    <!-- ------------- -->
+    <!-- EXTRA MARKUP  -->
+    <!-- ------------- -->
+    <!-- ------------- -->
+
+    <!-- HTML ID Attribute: The id attribute is a unique identifier which is used to specify the document.
+    It is used by CSS and JavaScript to perform a certain task for a unique element. In CSS, the id 
+    attribute is written using # symbol followed by id. -->
+    
+    <!-- HTML CLASS Attribute: The class attribute is used to specify one or more class names for an 
+    HTML element. The class attribute can be used on any HTML element. The class name can be used 
+    by CSS and JavaScript to perform certain tasks for elements with the specified class name. 
+    The class name in CSS stylesheet using “.” symbol.  -->
+
+    <!-- BLOCK ELEMENTS, h1, p, ul, li, - they always appear on a new line -->
+
+    <h1>HEADING IS A BLOCK ELEMENT</h1>
+    <p>PARAGRAPH IS A BLOCK ELEMENT</p>
+    <ul>
+        <li>UNORDERED LIST IS A BLOCK ELEMENT</li>
+    </ul>
+
+    <!-- INLINE ELEMENTS, a, b, em, img - they always continue on the same line -->
+    
+    Timed to a single revolution of the planet around
+    the sun at a 23.4 degrees tilt that plays out the
+    rhythm of the seasons, this <em>Origins of Art</em>
+    cycle is organized around four themes: <b>science,
+    architecture, history</b> and <b>religion</b>.
+
+    <!-- a DIV tag is for grouping certain website elements, using a css we can modify this groups together -->
+    <div id="header">
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </div> <!-- end of header-->
+
+
+    <!-- a SPAN tag, is for equivalent of the DIV tag but its inline, again used with css to modify -->
+    <p>Anish Kapoor won the Turner Prize in 1991 and exhibited at the <span class="gallery">Tate
+        Modern</span> gallery in London in 2003.</p>
+
+    
+    <!-- IFRAME tag is for creating an inline frame, for maps go to gmaps and copy the embedded version -->
+    <h1>MAPS (IFRAME) </h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11911.071417584379!2d44.73844275239364!3d41.72552797391493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4044731af1c91591%3A0xab872b019aedaa11!2sDelisi!5e0!3m2!1sen!2sge!4v1665161714543!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    
+    <!-- META is information about the website, it is not displayed but it is used so that the search
+    engines identify the website well. there are:
+    
+    DESCRIPTIONS - This contains a description of the page. This description is commonly used by search
+    engines to understand what the page is about and should be a maximum of 155 characters. Sometimes
+    it is also displayed in search engine results.
+
+    KEYWORDS - This contains a list of commaseparated words that a user might search on to find the page.
+    In practice, this no longer has any noticeable effect on how search engines index your site.
+    
+    ROBOTS - This indicates whether search engines should add this page to their search results or not. A
+    value of noindex can be used if this page should not be added. A value of nofollow can be used if 
+    search engines should add this page in their results but not any pages that it links to.
+
+    AUTHOR - This defines the author of the web page.
+
+    PRAGMA - This prevents the browser fromcaching the page. (That is, storing it locally to save time
+    downloading it on subsequent visits.)
+
+    EXPIRES - Because browsers often cache the content of a page, the expires option can be used to 
+    indicate when the page should expire (and no longer be cached). Note that the date must be 
+    specified in the format shown.
+
+        -->
+
+    <!-- <!DOCTYPE html>
+        <html>
+            <head>
+            <title>Information About Your Pages</title>
+                <meta name="description"
+                content="An Essay on Installation Art" />
+                <meta name="keywords"
+                content="installation, art, opinion" />
+                <meta name="robots"
+                content="nofollow" />
+                <meta http-equiv="author"
+                content="Jon Duckett" />
+                <meta http-equiv="pragma"
+                content="no-cache" />
+                <meta http-equiv="expires"
+                content="Fri, 04 Apr 2014 23:59:59 GMT" />
+            </head>0
+        <body></body> -->
+
+    <h1>VIDEO FILES</h1>
+
+    <!-- USE VIDEO tag to play video, 
+        SRC attribute is for the source of the file. 
+        PRELOAD tells the web how should the video be preloaded it has 3 options
+            NONE-to not load the video unless the user presses play. 
+            AUTO the browser automatically downloads the video when page loads, 
+            METADATA-thebrowser should collect the information such as the size, first frame, track list, and duration
+        WIDTH and HEIGHT are for the size of the box. 
+        CONTROLS attribute gives play/pause mute and other controls for the video. 
+        AUTOPLAY attribute is for autplaying the video when the web loads.
+        LOOP attribute is for looping them,  -->
+    <video src="videoplayback.mp4"
+        preload="metadata"
+        width="500"
+        controls
+
+    ></video>
+
+    <h1>AUDIO FILES</h1>
+
+
+    <!-- USE AUDIO tag to play audio,
+        SRC attribute is for the source of the file. 
+        PRELOAD tells the web how should the video be preloaded it has 3 options
+            NONE-to not load the video unless the user presses play. 
+            AUTO the browser automatically downloads the video when page loads, 
+            METADATA-thebrowser should collect the information such as the size, first frame, track list, and duration. 
+        CONTROLS attribute gives play/pause mute and other controls for the video. 
+        AUTOPLAY attribute is for autplaying the video when the web loads.
+        LOOP attribute is for looping them,  -->
+    <audio src="10Timer.mp3"
+        preload="none"
+        controls
+    ></audio>
+
+
+</body>
+</html>
+
+
